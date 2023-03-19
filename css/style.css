@@ -1,0 +1,696 @@
+                                                /* COMMON CSS STARTS HERE */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400&display=swap');
+
+:root {
+    --primaryfont: 'Ubuntu', sans-serif;
+    --secondaryfont: 'Abril Fatface', cursive;
+    --thirdfont: 'Open Sans', sans-serif;
+    --primarycolor: #0f2f44;
+    --secodarycolor: #ffc712;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center {
+    align-items: center;
+}
+                                                /* COMMON CSS ENDS HERE */
+
+                                               /* TOPBAR STARTS HERE */
+#topbar {
+    background-color: var(--primarycolor);
+}
+#topbar .greeting_part {
+    padding: 18px 0;
+    color: white;
+    width: 50%;
+    font-family: var(--primaryfont);
+    font-size: 16px;
+    font-weight: 400;
+}
+#topbar .opening_hours {
+    padding: 18px 0;
+    color: white;
+    text-align: right;
+    width: 50%;
+    font-family: var(--primaryfont);
+    font-size: 16px;
+    font-weight: 400;
+}
+                                            /* TOPBAR ENDS HERE */
+
+                                            /* NAVBAR STARTS HERE */
+nav .logo {
+    width: 30%;
+    padding: 30px 0;
+}
+nav .menu {
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li {
+    display: inline-block;
+    margin: 0px;
+}
+nav .menu ul li a {
+    color: black;
+    padding: 42px 19px;
+    display: block;
+    font-family: var(--primaryfont);
+    font-size: 16px;
+    background-color: white;
+    transition: 0.4s;
+}
+nav .menu ul li a:hover {
+    color: var(--secodarycolor);
+    background-color: #fff9e6;
+}
+nav .menu ul li:hover> .cross_mark {
+    color: #999999;
+    background-color: white;
+}
+nav .menu ul li .cross_mark {
+    color: #999999;
+    padding: 34px 19px;
+}
+nav .menu ul li .cross_mark span {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .menu ul .magnifying_glass {
+    color: #999999;
+}
+nav .menu ul .magnifying_glass span {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+                                            /* NAVBAR ENDS HERE */
+
+                                            /* BANNER STARTS HERE */
+#banner {
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+#banner .container,
+#banner .row {
+    height: 100%;
+}
+#banner .banner_cnt {
+    width: 40%;
+}
+.banner_cnt h2 {
+    font-size: 50px;
+    font-weight: 300;
+    color: var(--primarycolor);
+    font-family: var(--primaryfont);
+}
+.banner_cnt h1 {
+    font-size: 80px;
+    font-weight: 400;
+    font-family: var(--secondaryfont);
+    text-transform: uppercase;
+    color: var(--primarycolor);
+}
+.banner_cnt h4 {
+    font-size: 32px;
+    font-family: var(--primaryfont);
+    font-weight: 400;
+    color: #8383bf;
+    letter-spacing: 18px;
+}
+.banner_cnt p {
+    font-size: 14px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    color: var(--primarycolor);
+    padding: 15px 0px;
+    line-height: 25px;
+}
+.banner_cnt a h3 {
+    padding: 15px 20px;
+    background-color: #8383bf;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    margin: 31px 0;
+    font-family: var(--primaryfont);
+    font-weight: 300;
+    font-size: 20px;
+}
+.banner_cnt span {
+    margin: 0 0 0 20px;
+}
+.banner_cnt span a {
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    border: 0px solid #999999;
+    display: inline-block;
+    line-height: 2;
+    text-align: center;
+    font-size: 27px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+                                            /* BANNER ENDS HERE */
+
+                                            /* ABOUT US STARTS HERE */
+
+#aboutus .aboutus_cnt {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#aboutus .textpart {
+    width: 50%;
+    display: inline-block;
+    margin: 102px 0;
+}
+#aboutus .textpart h4 {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: var(--primaryfont);
+    color: var(--primarycolor);
+}
+#aboutus .textpart h2 {
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--primarycolor);
+    padding: 11px 0 0 0;
+}
+#aboutus .textpart p {
+    font-family: var(--thirdfont);
+    color: var(--primarycolor);
+    font-size: 16px;
+    padding: 32px 0 35px 0;
+    color: var(--primarycolor);
+}
+#aboutus .textpart span {
+    display: block;
+    color: var(--primarycolor);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--thirdfont);
+    padding: 10px 0;
+    margin-left: 30px;
+}
+#aboutus .textpart .knowmore {
+    background-color: var(--secodarycolor);
+    width: 143px;
+    height: 45px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 34px;
+}
+#aboutus .textpart .readlater {
+    background-color: #ffffff;
+    width: 143px;
+    height: 45px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 20px;
+    margin-top: 34px;
+}
+#aboutus .textpart .knowmore a {
+    padding: 16px 21px;
+    width: 100%;
+    height: 100%;
+}
+#aboutus .textpart .readlater a {
+    padding: 16px 21px;
+    width: 100%;
+    height: 100%;
+}
+#aboutus .imagepart {
+    width: 50%;
+    display: inline-block;
+    margin: 102px 0;
+}
+                                            /* ABOUT US ENDS HERE */
+
+                                            /* SKILLS PART STARTS HERE */
+
+#skill .skill_cnt {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#skill .skill_cnt .imagepart {
+    width: 60%;
+    display: inline-block;
+}
+#skill .skill_cnt .imagepart img {
+    width: 100%;
+    height: 100%;
+}
+#skill .skill_cnt .indt {
+    width: 40%;
+    
+}
+#skill .skill_cnt .indt .text {
+    text-align: right;
+}
+#skill .skill_cnt .indt .text h4 {
+    margin-top: 8px;
+    font-family: var(--primaryfont);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--primarycolor);
+}
+#skill .skill_cnt .indt .text h1 {
+    margin-top: 10px;
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--primarycolor);
+}
+#skill .skill_cnt .indt .text p {
+    margin-top: 30px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--primarycolor);
+}
+#skill .skill_cnt .indt .image {
+    text-align: right;
+    margin-top: 36px;
+}
+#skill .skill_cnt .indt .image img {
+    width: 100%;
+}
+                                           /* SKILLS PART ENDS HERE */
+
+                                           /* SERVICES PART STARTS HERE */
+#services {
+    background-color: #f5f5f5;
+}
+#services .text_part {
+    margin-top: 59px;
+}
+#services .text_part h4 {
+    font-family: var(--primaryfont);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--primarycolor);
+    text-align: center;
+    padding-top: 59px;
+}
+#services .text_part h1 {
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--primarycolor);
+    text-align: center;
+    padding-top: 14px;
+}
+#services .card_part {
+    margin: 60px 0 79px 0;
+    display: inline-block;
+}
+#services .card_part .uiuxdesign {
+    width: calc(33.33% - 30px);
+    display: inline-block;
+    text-align: left;
+    margin-right: 30px;
+    background-color: #eeeeee;
+    height: 183px;
+    border-radius: 10px;
+    position: relative;
+}
+#services .card_part .uiuxdesign .row {
+    height: 100%;
+}
+#services .card_part .uiuxdesign .img {
+    width: calc(20% - 20px);
+    margin: 61px 20px;
+}
+#services .card_part .uiuxdesign .text {
+    width: calc(80% - 62px);
+    margin: 32px 21px;
+}
+#services .card_part .uiuxdesign .text h2 {
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    color: var(--primarycolor);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#services .card_part .uiuxdesign .text p {
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--primarycolor);
+}
+#services .card_part .uiuxdesign .overlay {
+    background-color: var(--primarycolor);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    height: 183px;
+    position: absolute;
+    width: 100%;
+    margin: -184px 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+#services .card_part .uiuxdesign .overlay .img {
+    display: inline-block;
+    margin: 30px 155px;
+}
+#services .card_part .uiuxdesign .overlay h2 {
+    margin-top: -6px;
+}
+#services .card_part .uiuxdesign .overlay button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 13px;
+    background-color: var(--secodarycolor);
+    border: none;
+    margin-right: -360px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transition-delay: 0.3s;
+}
+#services .card_part .uiuxdesign .overlay button a {
+    color: #0f2f44;
+}
+#services .card_part .uiuxdesign:hover .overlay button {
+    margin-right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+#services .card_part .uiuxdesign:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+#services .card_part .webdesign {
+    width: calc(33.33% - 30px);
+    display: inline-block;
+    text-align: left;
+    margin-right: 30px;
+    background-color: #eeeeee;
+    height: 183px;
+    border-radius: 10px;
+    position: relative;
+}
+#services .card_part .webdesign .row {
+    height: 100%;
+}
+#services .card_part .webdesign .img {
+    width: calc(20% - 20px);
+    margin: 61px 20px;
+}
+#services .card_part .webdesign .text {
+    width: calc(80% - 62px);
+    margin: 32px 21px;
+}
+#services .card_part .webdesign .text h2 {
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    color: var(--primarycolor);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#services .card_part .webdesign .text p {
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--primarycolor);
+}
+#services .card_part .webdesign .overlay {
+    background-color: var(--primarycolor);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    height: 183px;
+    position: absolute;
+    width: 100%;
+    margin: -184px 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+#services .card_part .webdesign .overlay .img {
+    display: inline-block;
+    margin: 30px 155px;
+}
+#services .card_part .webdesign .overlay h2 {
+    margin-top: 2px;
+}
+#services .card_part .webdesign .overlay button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 13px;
+    background-color: var(--secodarycolor);
+    border: none;
+    margin-right: -360px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transition-delay: 0.3s;
+}
+#services .card_part .webdesign .overlay button a {
+    color: #0f2f44;
+}
+#services .card_part .webdesign:hover .overlay button {
+    margin-right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+#services .card_part .webdesign:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+#services .card_part .videoediting {
+    width: calc(33.33% - 30px);
+    display: inline-block;
+    text-align: left;
+    margin-right: 30px;
+    background-color: #eeeeee;
+    height: 183px;
+    border-radius: 10px;
+    position: relative;
+}
+#services .card_part .videoediting .row {
+    height: 100%;
+}
+#services .card_part .videoediting .img {
+    width: calc(20% - 20px);
+    margin: 61px 20px;
+}
+#services .card_part .videoediting .text {
+    width: calc(80% - 62px);
+    margin: 32px 21px;
+}
+#services .card_part .videoediting .text h2 {
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    color: var(--primarycolor);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#services .card_part .videoediting .text p {
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--primarycolor);
+}
+#services .card_part .videoediting .overlay {
+    background-color: var(--primarycolor);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    height: 183px;
+    position: absolute;
+    width: 100%;
+    margin: -184px 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+#services .card_part .videoediting .overlay .img {
+    display: inline-block;
+    margin: 30px 155px;
+}
+#services .card_part .videoediting .overlay h2 {
+    margin-top: -12px;
+}
+#services .card_part .videoediting .overlay button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 12px;
+    background-color: var(--secodarycolor);
+    border: none;
+    margin-right: -360px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transition-delay: 0.3s;
+}
+#services .card_part .videoediting .overlay button a {
+    color: #0f2f44;
+}
+#services .card_part .videoediting:hover .overlay button {
+    margin-right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+#services .card_part .videoediting:hover .overlay {
+    opacity: 1;
+    visibility:visible;
+}
+                                           /* SERVICES PART ENDS HERE */
+
+                                           /* PORTFOLIO PART STARTS HERE */
+#portfolio {
+    margin-top: 101px;
+}
+#portfolio .text_part {
+    display: block;
+    text-align: center;
+    margin-bottom: 63px;
+}
+#portfolio .text_part h4 {
+    font-family: var(--primaryfont);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--primarycolor);
+}
+#portfolio .text_part h1 {
+    font-family: var(--secondaryfont);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--primarycolor);
+}
+#portfolio .imgpart {
+    width: 100%;
+    text-align: center;
+}
+#portfolio .imgpart .home {
+    width: calc(33.33% - 60px);
+    display: inline-block;
+    margin-right: 60px;
+}
+#portfolio .imgpart .home:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#portfolio .imgpart .home h1 {
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+#portfolio .imgpart .home:hover h1 {
+    visibility: visible;
+    opacity: 1;
+}
+#portfolio .imgpart .girl {
+    width: calc(33.33% - 60px);
+    display: inline-block;
+    margin-right: 60px;
+}
+#portfolio .imgpart .girl:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#portfolio .imgpart .girl h1 {
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+#portfolio .imgpart .girl:hover h1 {
+    visibility: visible;
+    opacity: 1;
+}
+#portfolio .imgpart .fan {
+    width: calc(33.33% - 60px);
+    display: inline-block;
+}
+#portfolio .imgpart .fan:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#portfolio .imgpart .fan h1 {
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    padding: 5px 10px;
+}
+#portfolio .imgpart .fan:hover h1 {
+    visibility: visible;
+    opacity: 1;
+}
+#portfolio .button {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 101px;
+}
+#portfolio button {
+    background-color: var(--secodarycolor);
+    border: none;
+    border-radius: 10px;
+}
+#portfolio button a {
+    padding: 17px 19px;
+    display: inline-block;
+    color: var(--primarycolor);
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-weight: 400;
+}
+                                           /* PORTFOLIO PART ENDS HERE */
+
+
